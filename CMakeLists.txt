@@ -12,7 +12,9 @@ set(SOURCE_FILE Activities_description.cpp
         Day_activities.cpp
         Day_activities.h
         Time.cpp
-        Time.h)
+        Time.h
+        Day_collection.cpp
+        Day_collection.h)
 add_executable(Activities_Tracker main.cpp)
 add_library(core ${SOURCE_FILE})
 target_link_libraries(Activities_Tracker core ${CURSES_LIBRARIES})
