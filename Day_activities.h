@@ -39,7 +39,7 @@ public:
     void show_program() const;
 
     int get_activities_number () const {
-        return day_activities.size();
+         return day_activities.size();
     }
 
     std::list<std::shared_ptr<Activities_description>> return_specific_time_activities(const std::string& time) const;

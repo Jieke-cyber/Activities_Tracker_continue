@@ -37,6 +37,16 @@ public:
         }
         return false;
     }
+
+    void show_collection() const {
+        for (const auto& day: week) {
+            day->show_program();
+        }
+    }
+
+    int get_days_number() const {
+        return week.size();
+    }
 };
 
 
