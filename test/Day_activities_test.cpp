@@ -25,7 +25,6 @@ TEST(Day_activities, Remove_activity_test) {
     day.add_activity("10:00", "11:00", "running");
     day.add_activity ("13:00", "16:00", "run");
     day.remove_activity("running");
-
     ASSERT_EQ(day.get_activities_number(), 1);
 
 }

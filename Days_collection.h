@@ -25,6 +25,7 @@ public:
         for(const auto& day: week ) {
             if(day->get_day_number() == day_number) {
                 week.remove(day);
+                break;
             }
         }
     }
